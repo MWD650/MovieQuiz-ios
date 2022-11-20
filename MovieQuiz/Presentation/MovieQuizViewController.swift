@@ -14,7 +14,6 @@ final class MovieQuizViewController: UIViewController {
     // MARK: - Lifecycle
   
     
-    
     @IBOutlet weak private var counterLabel: UILabel!
     @IBOutlet weak private var textLabel: UILabel!
     @IBOutlet weak private var imageView: UIImageView!
@@ -28,7 +27,7 @@ final class MovieQuizViewController: UIViewController {
         
         let firstQuestion = questions[currentQuestionIndex]
         let viewModel = convert(model: firstQuestion)
-        
+        imageView.layer.cornerRadius = 20
         show(quiz: viewModel)
         
         
@@ -62,7 +61,7 @@ final class MovieQuizViewController: UIViewController {
         }
         imageView.layer.masksToBounds = true
         imageView.layer.borderWidth = 8
-        imageView.layer.cornerRadius = 10
+        imageView.layer.cornerRadius = 20
         imageView.layer.borderColor = isCorrect ? UIColor.ypGreen.cgColor : UIColor.ypRed.cgColor
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0)
