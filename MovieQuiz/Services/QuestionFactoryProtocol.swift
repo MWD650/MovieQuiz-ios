@@ -9,5 +9,6 @@ import Foundation
 
 protocol QuestionFactoryProtocol {
     func requestNextQuestion()
-   // var delegate: QuestionFactoryDelegate? { get set } - закоментил 12 feb 2022
+   // var delegate: QuestionFactoryDelegate? { get set } - закоментил 12 feb 2023
+    func loadData()
 }
