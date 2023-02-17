@@ -115,10 +115,15 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="PVK-TH-TSf">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="YP Black"/>
                         <constraints>
+                            <constraint firstItem="PVK-TH-TSf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8xb-Eq-HHc"/>
+                            <constraint firstItem="PVK-TH-TSf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="R9y-be-bul"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qys-hf-Xn9" secondAttribute="trailing" constant="20" id="U1W-ly-ELM"/>
                             <constraint firstItem="qys-hf-Xn9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ehC-DF-elP"/>
                             <constraint firstItem="qys-hf-Xn9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="kfw-Q2-FNt"/>
@@ -126,6 +131,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="PVK-TH-TSf" id="3iC-vX-xbH"/>
                         <outlet property="counterLabel" destination="CYs-K4-MTt" id="aga-a5-rrS"/>
                         <outlet property="imageView" destination="lsN-ov-RXK" id="RAS-Zk-L6J"/>
                         <outlet property="noButton" destination="zuf-Pq-po8" id="QRu-Oj-AXx"/>
